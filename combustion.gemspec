@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'combustion'
-  s.version     = '0.5.4'
+  s.version     = '0.5.4.sifi'
   s.authors     = ['Pat Allan']
   s.email       = ['pat@freelancing-gods.com']
   s.homepage    = 'https://github.com/pat/combustion'
@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_runtime_dependency 'activesupport', '>= 3.0.0'
-  s.add_runtime_dependency 'railties', '>= 3.0.0'
+  s.add_runtime_dependency 'activesupport', '~> 3.2.22'
+  s.add_runtime_dependency 'railties', '~> 3.2.22'
   s.add_runtime_dependency 'thor',  '>= 0.14.6'
 
   s.add_development_dependency 'rails'
